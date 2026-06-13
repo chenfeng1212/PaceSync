@@ -77,7 +77,7 @@ const questions = [
         options: [
             { text: "先逃避一下再說", pScore: 2, jScore: 0, aScore: 1 },
             { text: "隨便挑一件做，走一步算一步", pScore: 2, jScore: 0, aScore: 0 },
-            { text: "很緊張地立刻開始列計畫或補計畫", pScore: 0, jScore: 2, aScore: 2 }
+            { text: "立刻開始列計畫或補計畫", pScore: 0, jScore: 2, aScore: 2 }
         ]
     },
     {
@@ -85,7 +85,7 @@ const questions = [
         options: [
             { text: "1~3分 (壓力讓我當機)", pScore: 0, jScore: 2, aScore: 2 },
             { text: "4~7分 (稍微有點幫助)", pScore: 1, jScore: 1, aScore: 1 },
-            { text: "8~10分 (我是死線戰神)", pScore: 2, jScore: 0, aScore: 0 }
+            { text: "8~10分 (沒有壓力根本很難做事)", pScore: 2, jScore: 0, aScore: 0 }
         ]
     },
     {
