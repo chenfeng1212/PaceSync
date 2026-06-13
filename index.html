@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PaceSync｜找回你的行動節奏</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="container">
+    <div id="home-screen" class="screen active">
+        <div class="brand-logo">PaceSync</div>
+        <h1>找回你的行動節奏</h1>
+        <p class="subtitle">你是「極限衝浪」的P人，還是「完美焦慮」的J人？</p>
+        <p>透過 13 個日常情境，深度解析你的拖延特質、焦慮指數，並找到專屬你的行動解方！</p>
+        <button class="btn-primary" onclick="startQuiz()">開始步調同步</button>
+    </div>
+
+    <div id="quiz-screen" class="screen">
+        <div class="header-bar">
+            <span class="brand-small">PaceSync</span>
+            <span class="progress-text">進度：<span id="current-q-num">1</span> / 13</span>
+        </div>
+        <div class="progress-bar-bg">
+            <div id="quiz-progress" class="quiz-progress-fill"></div>
+        </div>
+        <div class="question-title" id="question-text">載入中...</div>
+        <div id="options-area" class="options-grid"></div>
+    </div>
+
+    <div id="result-screen" class="screen">
+        <div class="brand-small" style="text-align: center; margin-bottom: 10px;">PaceSync 分析報告</div>
+        <h2 id="result-role" class="result-title">分析中...</h2>
+        
+        <div class="traits-container">
+            <div class="trait-row">
+                <span>計畫性 (J)</span>
+                <div class="progress-bar"><div id="bar-pj" class="progress-fill fill-pj"></div></div>
+                <span>彈性 (P)</span>
+            </div>
+            <div class="trait-row">
+                <span>從容放鬆</span>
+                <div class="progress-bar"><div id="bar-anxiety" class="progress-fill fill-anxiety"></div></div>
+                <span>高度焦慮</span>
+            </div>
+        </div>
+        
+        <div class="advice-box">
+            <h3>💡 PaceSync 專屬建議</h3>
+            <p id="result-desc"></p>
+            <ul id="result-advice"></ul>
+        </div>
+        <button class="btn-primary" onclick="location.reload()">重新測驗</button>
+    </div>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
